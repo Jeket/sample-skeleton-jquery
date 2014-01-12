@@ -89,11 +89,26 @@ module.exports = function (grunt) {
           port: 9000
         }
       }
+    },
+    assemble: {
+      pages: {
+        options: {
+          flatten: true,
+          assets: 'assets'
+        },
+        files: {
+          'index.html': ['src/index.hbs']
+        }
+      }
     }
   });
+
+  // Load npm plugins to provide necessary tasks.
+  grunt.loadNpmTasks('assemble');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'connect', 'qunit', 'clean', 'concat', 'uglify']);
   grunt.registerTask('server', ['connect', 'watch']);
   grunt.registerTask('test', ['jshint', 'connect', 'qunit']);
+  grunt.registerTask('docs', ['assemble']);
 };
