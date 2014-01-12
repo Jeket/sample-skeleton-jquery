@@ -1,25 +1,23 @@
-# Sample skeleton jQuery plugin
+# Sample skeleton jQuery plugin [![Build Status](https://travis-ci.org/ilyar/sample-skeleton-jquery.png)](https://travis-ci.org/ilyar/sample-skeleton-jquery)
 
 todo
 
 ## Getting Started
 
-Download the [production version][min] or the [development version][max].
+### Requirements
+    npm install -g yo
+    npm install -g generator-jquery
 
-[min]: https://raw.github.com/ilyar/jquery-sample-skeleton-jquery/master/dist/jquery.sample-skeleton-jquery.min.js
-[max]: https://raw.github.com/ilyar/jquery-sample-skeleton-jquery/master/dist/jquery.sample-skeleton-jquery.js
+### Create a jQuery plugin with Yeoman
+    mkdir sample-skeleton-jquery && cd $_
+    yo jquery
 
-In your web page:
-
-```html
-<script src="jquery.js"></script>
-<script src="dist/sample-skeleton-jquery.min.js"></script>
-<script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
-});
-</script>
-```
+### Create a new repository
+    git init
+    git .
+    git commit -am "first commit"
+    git remote add origin url_repo
+    git push -u origin master
 
 ## Documentation
 _(Coming soon)_
