@@ -1,0 +1,28 @@
+{
+  "name": "sample-skeleton-jquery",
+  "title": "Sample skeleton jQuery plugin",
+  "description": "todo",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ilyar/sample-skeleton-jquery",
+  "author": {
+    "name": "Ilya Rogov @ilyarsoftware",
+    "url": "https://github.com/ilyar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ilyar/sample-skeleton-jquery"
+  },
+  "bugs": "https://github.com/ilyar/sample-skeleton-jquery/issues",
+  "licenses": [
+    {
+      "type": "BSD-3-Clause",
+      "url": "http://opensource.org/licenses/BSD-3-Clause"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~2"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ]
+}
